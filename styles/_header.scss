@@ -1,0 +1,60 @@
+.header-menu{
+    padding: 20px;
+    background-color: #E5E5E5;
+    display: flex;
+
+    .logo-title{
+        display: flex;
+
+        h1{
+            font-family: 'Roboto', sans-serif;
+            font-size: 25px;
+            margin-top: 15px;
+            margin-left: 12px;
+        }
+    }
+    .etapes-menu{
+        display: flex;
+        h2{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 22px;
+        }
+        .etapes-menu-list{
+            display: flex;
+            li{
+                font-family: 'Roboto', sans-serif;
+                font-size: 14px;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+nav{
+    background-color: #2D4059;
+    .categories-btn{
+        width: 127.637px;
+        height: 39.066px;
+        border-radius: 7px;
+        border: none;
+        background-color: #E5E5E5;
+        color: #2D4059;
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 700;
+    }
+    #searching-bar{
+        width: 299px;
+        height: 39px;
+        border-radius: 7px;
+        border: none;
+    }
+    .research-btn{
+        background-color: #EA5455;
+        color: #E5E5E5;
+        width: 127.637px;
+        height: 39.066px;
+        border-radius: 7px;
+        border: none;
+    }
+}
