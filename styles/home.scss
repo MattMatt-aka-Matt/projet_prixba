@@ -132,6 +132,17 @@ margin-left: 48px;
     height: 320px;
     width: 320px;
 }
+.titre-categorie-body{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+.titre-categorie-body a{
+    text-decoration: none;
+    color: #2D4059;
+    font-weight: 700;
+    font-size: 30px;
+}
 .liste-categorie-body{
     display: flex;
     flex-direction: row;
