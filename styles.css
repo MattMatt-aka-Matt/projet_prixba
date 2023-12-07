@@ -1,2 +1,74 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+}
 
-@import "../styles/footer"; 
+.footer {
+  font-size: 0.9em;
+}
+
+.footer-container, .footer-nav, .footer-legal {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@media (max-width: 600px) {
+  .footer-container, .footer-nav, .footer-legal {
+    flex-direction: column;
+  }
+}
+
+.footer-container {
+  background-color: #2D4059;
+  color: white;
+  padding: 20px;
+}
+
+.footer-item {
+  text-align: center;
+}
+.footer-item img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.footer-nav {
+  background-color: #cccccc;
+  padding: 10px 0;
+}
+.footer-nav .nav-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 150px;
+}
+@media (max-width: 600px) {
+  .footer-nav .nav-col {
+    margin: 0;
+    width: 50%;
+  }
+}
+.footer-nav a {
+  color: #2D4059;
+  margin-bottom: 30px;
+  text-decoration: none;
+}
+@media (max-width: 600px) {
+  .footer-nav a {
+    margin-bottom: 0;
+    padding: 8px;
+  }
+}
+
+.footer-legal {
+  background-color: #2D4059;
+  color: #E5E5E5;
+  padding: 10px 0;
+  text-align: center;
+}
+.footer-legal p {
+  margin: 0;
+}
+
+/*# sourceMappingURL=styles.css.map */
