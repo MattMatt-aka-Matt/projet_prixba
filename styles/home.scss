@@ -1,0 +1,35 @@
+main{
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+}
+.display-body{
+    display: flex;
+}
+
+.titre-body { 
+    color:#EA5455;
+    font-size: 30px;
+    font-weight: 700;
+
+}
+.bestsells-body{
+    display: flex;
+    gap: 21px;
+    align-items: center;
+}
+.bouton-body {
+    width: 42px;
+    height: 42px;
+}
+.produit-body{
+    
+}
+.spe-body{
+    display: flex;
+    justify-content: space-between;
+}
+.stock-body{
+    color: greenyellow;
+}
