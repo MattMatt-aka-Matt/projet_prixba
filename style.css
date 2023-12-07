@@ -51,14 +51,21 @@ table {
 main {
   display: flex;
   justify-content: center;
+  align-items: center;
   height: auto;
   width: 100%;
+  flex-direction: column;
 }
 
 .titre-body {
   color: #EA5455;
   font-size: 30px;
   font-weight: 700;
+  margin-bottom: 47px;
+}
+
+#titre-display {
+  margin-left: 108px;
 }
 
 .bestsells-body {
@@ -75,13 +82,138 @@ main {
   cursor: pointer;
 }
 
+#gauche {
+  margin-right: 48px;
+}
+
+#droite {
+  margin-left: 48px;
+}
+
+.produit-body {
+  width: 260px;
+  height: 260px;
+  border-radius: 6px;
+  box-shadow: 0 0 9px 0;
+}
+
+#smart-produit-body {
+  display: none;
+}
+
+.produit-body img {
+  padding: 20px 20px 0px 20px;
+}
+
+.produit-body h2 {
+  padding-left: 20px;
+  font-style: normal;
+  font-weight: 700;
+}
+
 .spe-body {
   display: flex;
   justify-content: space-between;
+  padding-left: 20px;
+  margin-top: 6px;
 }
 
 .stock-body {
-  color: greenyellow;
+  color: #42CC58;
+  padding-right: 20px;
+}
+
+.categorie-body {
+  margin-top: 170px;
+}
+
+.titre-categorie-body {
+  display: flex;
+  align-items: baseline;
+}
+
+.titre-categorie-body a {
+  text-decoration: none;
+  color: black;
+  margin-left: 10px;
+}
+
+.liste-categorie-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.liste-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.categorie-categorie-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 160px;
+  width: 160px;
+  border-radius: 25px;
+  background: #2D4059;
+}
+
+.categorie-categorie-body a {
+  text-decoration: none;
+  margin-top: 16px;
+  color: #e5e5e5;
+  font-weight: 700;
+}
+
+.choix-body {
+  margin-top: 170px;
+}
+
+.liste-body #choix {
+  gap: 44px;
+}
+
+.liste-choix {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 26px;
+}
+
+.liste-choix a {
+  text-decoration: none;
+  color: #EA5455;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 760px) {
+  .produit-body {
+    display: none;
+  }
+  #smart-produit-body {
+    display: block;
+    height: 320px;
+    width: 320px;
+  }
+  .liste-categorie-body {
+    display: flex;
+    flex-direction: row;
+  }
+  .liste-body {
+    display: flex;
+    flex-direction: column;
+  }
+  #categorie-desktop {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
