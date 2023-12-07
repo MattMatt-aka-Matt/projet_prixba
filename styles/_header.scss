@@ -15,16 +15,32 @@
     }
     .etapes-menu{
         display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
         h2{
             font-family: 'Montserrat', sans-serif;
             font-size: 22px;
+            margin-bottom: 10px;
         }
         .etapes-menu-list{
             display: flex;
-            li{
+            align-items: center;
+            margin-left: 500px;
+            .number-list{
+                font-family: 'Roboto', sans-serif;
+                font-size: 14px;
+                font-weight: 700;
+                color: #E5E5E5;
+                padding: 6px 10px;
+                background-color: #EA5455;
+                border-radius: 20px;
+                margin-left: 43px;
+            }
+            .step-list{
                 font-family: 'Roboto', sans-serif;
                 font-size: 14px;
                 font-weight: 500;
+                margin-left: 17px;
             }
         }
     }
