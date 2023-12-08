@@ -101,8 +101,9 @@ header nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 1680px;
+  width: 1900px;
   height: 102px;
+  margin-bottom: 100px;
 }
 header nav .categories-btn {
   width: 127.637px;
@@ -402,6 +403,90 @@ main {
   #categorie-desktop {
     display: none;
   }
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+}
+
+.footer {
+  font-size: 0.9em;
+  background-color: #2D4059;
+  color: white;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+  }
+}
+
+.footer-item {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+}
+.footer-item:last-child {
+  margin-right: 0;
+}
+.footer-item img {
+  width: 50px;
+  margin-right: 10px;
+}
+.footer-item .text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.footer-item .title {
+  font-weight: bold;
+  margin: 0 0 5px 0;
+}
+.footer-item p {
+  margin: 0;
+}
+
+.footer-nav {
+  background-color: #cccccc;
+  padding: 10px 0;
+}
+.footer-nav .nav-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 150px;
+}
+@media (max-width: 600px) {
+  .footer-nav .nav-col {
+    margin: 0;
+    width: 50%;
+  }
+}
+.footer-nav a {
+  color: #2D4059;
+  margin-bottom: 30px;
+  text-decoration: none;
+}
+@media (max-width: 600px) {
+  .footer-nav a {
+    margin-bottom: 0;
+    padding: 8px;
+  }
+}
+
+.footer-legal {
+  background-color: #2D4059;
+  color: #E5E5E5;
+  padding: 10px 0;
+  text-align: center;
+}
+.footer-legal p {
+  margin: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
