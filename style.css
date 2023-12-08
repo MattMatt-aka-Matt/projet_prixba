@@ -230,6 +230,10 @@ main {
   flex-direction: column;
 }
 
+.display-body {
+  margin-top: 170px;
+}
+
 .titre-body {
   color: #EA5455;
   font-size: 30px;
