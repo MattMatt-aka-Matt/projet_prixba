@@ -4,25 +4,180 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles.css" rel="stylesheet">
-    <title>Ma Page d'Accueil</title>
+    <title>Prixba Accueil</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Bienvenue sur ma page d'accueil</h1>
+        <div class="header-menu">
+            <div class="logo-title">
+                <img src="images/logo.png" alt="logo du site Priba">
+                <h1>Priba</h1>
+            </div>
+            <div class="etapes-menu">
+                <h2>Tous vos besoins à petits prix dans la métropole Lilloise</h2>
+                <div class="etapes-menu-list">
+                    <p class="number-list">1</p>   <p class="step-list">Choix et commande des articles</p>
+                    <p class="number-list">2</p>   <p class="step-list">Retrait des articles</p>
+                    <p class="number-list">3</p>   <p class="step-list">Paiement des articles</p>
+                </div>
+             </div>
+        </div>
+        <nav>
+            <div class="categories-dropdown">
+                <button class="categories-btn">Catégories<i class="fa fa-angle-down arrow" aria-hidden="true"></i></button>
+                <!--<div class="dropdown-child">
+                    <a href="product.html">product</a>
+                    <a href="products.html">products</a>
+                    <a href="index.html">accueil</a>
+                </div>-->
+            </div>
+            <div class="research">
+                 <input type="text" id="searching-bar">
+                 <button class="research-btn">Rechercher</button>
+            </div>
+            <div class="site-sections">
+                <a href="#">Catalogue</a>
+                <a href="#">Questions fréquentes</a>
+                <div class="connexion">
+                   <a href="#">Connexion</a><i class="fa fa-angle-down arrow-down" aria-hidden="true"></i>
+                </div>
+                    <div class="shopping-cart">
+                        <i class="fa fa-cart-arrow-down" aria-hidden="true"></i><i class="fa fa-circle" aria-hidden="true"></i>
+                    </div>
+            </div> 
+        </nav>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#">Accueil</a></li>
-            <li><a href="#">À propos</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-
     <main>
-        <h2>Contenu principal</h2>
-        <p>Ceci est le contenu principal de ma page d'accueil.</p>
+        <section class="display-body">
+            <h1 class="titre-body" id="titre-display">Meilleures Ventes</h1>
+            <div class="bestsells-body">
+                <button class="bouton-body" id="gauche"><img src="./images/polygon gauche.svg" alt="Flèche gauche" ></button>
+                <div class="produit-body">
+                    <img src="./images/Marteau.png" alt="Produit marteau">
+                    <h2>Marteau</h2>
+                    <div class="spe-body">
+                        <p> 1€</p>
+                        <p class="stock-body">En stock</p>
+                    </div>
+                </div>
+                <div class="produit-body">
+                    <img src="./images/Marteau.png" alt="Produit marteau">
+                    <h2>Marteau</h2>
+                    <div class="spe-body">
+                        <p> 1€</p>
+                        <p class="stock-body">En stock</p>
+                    </div>
+                </div>
+                <div class="produit-body">
+                    <img src="./images/Marteau.png" alt="Produit marteau">
+                    <h2>Marteau</h2>
+                    <div class="spe-body">
+                        <p> 1€</p>
+                        <p class="stock-body">En stock</p>
+                    </div>
+                </div>
+                <div class="produit-body">
+                    <img src="./images/Marteau.png" alt="Produit marteau">
+                    <h2>Marteau</h2>
+                    <div class="spe-body">
+                        <p> 1€</p>
+                        <p class="stock-body">En stock</p>
+                    </div>
+                </div>
+                <div class="produit-body" id="smart-produit-body">
+                    <img src="./images/Masque.png" alt="Produit Masque">
+                    <h2>Marteau</h2>
+                    <div class="spe-body">
+                        <p> 1€</p>
+                        <p class="stock-body">En stock</p>
+                    </div>
+                </div>
+                <button class="bouton-body" id="droite"><img src="./images/polygon droite.svg" alt="Flèche droite" ></button>
+            </div>
+        </section>
+        <section class="categorie-body">
+            <div class="titre-categorie-body">
+                <h1 class="titre-body">Découvrez nos offres par catégories</h1>
+                <a href=""> Voir tout</a>
+            </div>
+            <div class="liste-categorie-body">
+                <div class="liste-body">
+                    <div class="categorie-categorie-body" id="categorie-desktop">
+                        <img src="./images/tools-solid 1.svg" alt="Logo catégorie">
+                        <a href="">Bricolage</a>
+                    </div>
+                    <div class="categorie-categorie-body">
+                        <img src="./images/lightbulb-regular 1.svg" alt="Logo catégorie">
+                        <a href="">Multimédia</a>
+                    </div>
+                    <div class="categorie-categorie-body" id="categorie-desktop">
+                        <img src="./images/utensils-solid 1.svg" alt="Logo catégorie">
+                        <a href="">Cuisine</a>
+                    </div>
+                    <div class="categorie-categorie-body" >
+                        <img src="./images/lightbulb-regular 1.svg" alt="Logo catégorie">
+                        <a href="">Multimédia</a>
+                    </div>
+                    <div class="categorie-categorie-body">
+                        <img src="./images/lightbulb-regular 1.svg" alt="Logo catégorie">
+                        <a href="">Multimédia</a>
+                    </div>
+                    <div class="categorie-categorie-body">
+                        <img src="./images/lightbulb-regular 1.svg" alt="Logo catégorie">
+                        <a href="">Multimédia</a>
+                    </div>
+                </div>
+                <div class="liste-body">
+                    <div class="categorie-categorie-body" id="categorie-desktop">
+                        <img src="./images/lightbulb-regular 1.svg" alt="Logo catégorie">
+                        <a href="">Multimédia</a>
+                    </div>
+                    <div class="categorie-categorie-body">
+                        <img src="./images/lightbulb-regular 1.svg" alt="Logo catégorie">
+                        <a href="">Multimédia</a>
+                    </div>
+                    <div class="categorie-categorie-body" id="categorie-desktop">
+                        <img src="./images/lightbulb-regular 1.svg" alt="Logo catégorie">
+                        <a href="">Multimédia</a>
+                    </div>
+                    <div class="categorie-categorie-body">
+                        <img src="./images/lightbulb-regular 1.svg" alt="Logo catégorie">
+                        <a href="">Multimédia</a>
+                    </div>
+                    <div class="categorie-categorie-body">
+                        <img src="./images/lightbulb-regular 1.svg" alt="Logo catégorie">
+                        <a href="">Multimédia</a>
+                    </div>
+                    <div class="categorie-categorie-body">
+                        <img src="./images/lightbulb-regular 1.svg" alt="Logo catégorie">
+                        <a href="">Multimédia</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="choix-body">
+            <h1 class="titre-body">Avoir le choix chez PrixBas</h1>
+            <div class="liste-body" id="choix">
+                <div class="liste-choix">
+                    <img src="images/Image choix.png" alt="">
+                    <a href="" class="titre-choix">Je choisis</a>
+                </div>
+                <div class="liste-choix">
+                    <img src="images/Image choix (2).png" alt="">
+                    <a href="" class="titre-choix">Je choisis</a>
+                </div>
+                <div class="liste-choix">
+                    <img src="images/Image choix (3).png" alt="">
+                    <a href="" class="titre-choix">Je choisis</a>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
